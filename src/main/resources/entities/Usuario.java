@@ -10,5 +10,7 @@ package entities;
  * @author 2098654
  */
 public class Usuario {
-    
+    private int id;
+    private String nombre ;
+    private String tipo;
 }
