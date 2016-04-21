@@ -24,6 +24,6 @@ public class Equipo {
     private Boolean asegurado ;
     private String categoria;
     private int tiempo_uso;
-    private proveedor proveedor;
+    private String proveedor;
     private String descripcion_estado;
 }
