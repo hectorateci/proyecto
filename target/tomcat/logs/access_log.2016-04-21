@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [21/Apr/2016:15:50:48 -0500] "GET /index.xhtml HTTP/1.1" 200 382 http-bio-8080-exec-1 710
+0:0:0:0:0:0:0:1 - - [21/Apr/2016:15:50:48 -0500] "GET /javax.faces.resource/theme.css.xhtml?ln=primefaces-aristo HTTP/1.1" 304 - http-bio-8080-exec-4 165
