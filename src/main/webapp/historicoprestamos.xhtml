@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:pe="http://primefaces.org/ui/extensions">
+    <h:head></h:head>
+
+    <h:body>
+        <h:form id="formulario_historial">
+        <h3>LABORATORIO ELECTRONICA</h3>
+        <p:panelGrid style="margin-top:25px" columnClasses="centered">
+                <f:facet name="header">
+                    <p:row>
+                        <p:column colspan="6">LABORATORIO ELECTRONICA </p:column>
+                    </p:row>
+                </f:facet>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;" colspan="2"> NOMBRE DEL EQUIPO: </p:column>
+                    <p:column colspan="4">"Multimetro - Termometro"</p:column>
+                </p:row>
+            
+                <p:row>
+                    <p:column colspan="6" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;"> MARCA: </p:column>
+                    <p:column colspan="2">"Extech 430"</p:column>
+                    <p:column style="font-weight: bold;"> REFER. O SERIAL: </p:column>
+                    <p:column colspan="2">"061007781"</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;" colspan="2"> REFERENCIA INTERNA LAB: </p:column>
+                    <p:column colspan="2">"Ternometro M21"</p:column>
+                    <p:column style="font-weight: bold;"> ESTADO: </p:column>
+                    <p:column>"ACTIVO"</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;" colspan="2"> ACCESORIOS: </p:column>
+                    <p:column colspan="4">"Puntas de Multimetro y termocupla tipo K"</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;" colspan="2"> Descripcion del equipo: </p:column>
+                    <p:column colspan="4">"Digital autoescala en DCV,CAV,DCA, °F°C, COndensadores, %Hz, Ohomios, Diodo y Continuidad, TRUE RMS"</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;"> Fecha de Adquisición</p:column>
+                    <p:column style="font-weight: bold;"> Fechas límite de Garantía </p:column>
+                    <p:column style="font-weight: bold;"> Proveedor </p:column>
+                    <p:column style="font-weight: bold;"> Orden de Compra </p:column>
+                    <p:column style="font-weight: bold;" colspan="2"> Valor </p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column>"Null"</p:column>
+                    <p:column>"Null"</p:column>
+                    <p:column>"Null"</p:column>
+                    <p:column>"Null"</p:column>
+                    <p:column colspan="2">"Null"</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;" colspan="2"> Código de activo</p:column>
+                    <p:column style="font-weight: bold;" colspan="2"> Asegurado </p:column>
+                    <p:column style="font-weight: bold;" colspan="2"> Categoria </p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column colspan="2">"Null"</p:column>
+                    <p:column colspan="2">"SI      NO"</p:column>
+                    <p:column colspan="2">"Null"</p:column>
+                </p:row>
+                
+                <f:facet name="footer">
+                    <p:row>
+                        <p:column colspan="6">HISTORIAL </p:column>
+                    </p:row>
+                </f:facet>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;"> Revisado por: </p:column>
+                    <p:column colspan="2">"Null"</p:column>
+                    <p:column style="font-weight: bold;"> Vo.Bo: </p:column>
+                    <p:column colspan="2">"Null"</p:column>
+                </p:row>
+                <p:row>
+                    <p:column style="font-weight: bold;"> Fecha: </p:column>
+                    <p:column colspan="2">"Null"</p:column>
+                    <p:column style="font-weight: bold;"> Fecha:</p:column>
+                    <p:column colspan="2">"Null"</p:column>
+                </p:row>
+                
+            </p:panelGrid>
+                <p:panelGrid >
+                    <p:dataTable var="car" value="NULL" scrollable="true" scrollHeight="150">
+                        <p:column headerText="Id" footerText="Id">
+                            <h:outputText value="NUll" />
+                        </p:column>
+                        <p:column headerText="Year" footerText="Year">
+                            <h:outputText value="NUll" />
+                        </p:column>
+                        <p:column headerText="Brand" footerText="Brand">
+                            <h:outputText value="NULL" />
+                        </p:column>
+                        <p:column headerText="Color" footerText="Color">
+                            <h:outputText value="NULL" />
+                        </p:column>
+                    </p:dataTable>
+                </p:panelGrid>
+        
+   
+                <!--
+                <f:facet name="header">
+                    <p:row>
+                        <p:column colspan="7">NOMBRE DEL EQUIPO: </p:column>
+                        <p:column colspan="7">"Multimetro-Ternometro" </p:column>
+                    </p:row>
+                    <p:row>
+                    <p:column colspan="7" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                    <p:column colspan="2" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                    </p:row>
+                    <p:row>
+                        <p:column colspan="2">MARCA: </p:column>
+                        <p:column colspan="2">"Extech 430"</p:column>
+                        <p:column colspan="2">REFER O SERIAL: </p:column>
+                        <p:column colspan="2">"061007781" </p:column>
+                    </p:row>
+
+                </f:facet>
+
+                <p:row>
+                    <p:column style="font-weight: bold;">Seattle</p:column>
+                    <p:column style="font-weight: bold;">4</p:column>
+
+                    <p:column rowspan="2" style="font-weight: bold;">Seattle</p:column>
+                    <p:column rowspan="2" style="font-weight: bold;">4</p:column>
+
+                    <p:column rowspan="5">Seattle</p:column>
+                    <p:column rowspan="5">2</p:column>
+
+                    <p:column rowspan="11" style="font-weight: bold;">Chicago</p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column>Houston</p:column>
+                    <p:column >0</p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column colspan="4" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column style="font-weight: bold;">Utah</p:column>
+                    <p:column style="font-weight: bold;">4</p:column>
+
+                    <p:column rowspan="2">Utah</p:column>
+                    <p:column rowspan="2">3</p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column>San Antonio</p:column>
+                    <p:column >2</p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column colspan="6" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column style="font-weight: bold;">Chicago</p:column>
+                    <p:column style="font-weight: bold;">4</p:column>
+
+                    <p:column rowspan="2" style="font-weight: bold;">Chicago</p:column>
+                    <p:column rowspan="2" style="font-weight: bold;">4</p:column>
+
+                    <p:column rowspan="5" style="font-weight: bold;">Chicago</p:column>
+                    <p:column rowspan="5" style="font-weight: bold;">4</p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column>New York</p:column>
+                    <p:column >1</p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column colspan="4" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column>Atlanta</p:column>
+                    <p:column >1</p:column>
+
+                    <p:column rowspan="2">Orlando</p:column>
+                    <p:column rowspan="2">0</p:column>
+                </p:row>
+
+                <p:row>
+                    <p:column style="font-weight: bold;">Orlando</p:column>
+                    <p:column style="font-weight: bold;">4</p:column>
+                </p:row>
+
+
+                <f:facet name="footer">
+                    <p:row>
+                        <p:column  colspan="4" style="text-align: right">
+                            Finals MVP
+                        </p:column>
+                        <p:column  colspan="3" rowspan="3">
+                            Michael Jordan (Chicago)
+                        </p:column>
+                    </p:row>
+
+                    <p:row>
+                        <p:column  colspan="4" style="text-align: right">
+                            Season MVP
+                        </p:column>
+                    </p:row>
+                    <p:row>
+                        <p:column  colspan="4" style="text-align: right">
+                            Top Scorer
+                        </p:column>
+                    </p:row>
+                </f:facet>
+            </p:panelGrid>
+        -->
+        </h:form> 
+        
+    </h:body>
+
+</html>

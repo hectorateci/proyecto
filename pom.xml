@@ -60,6 +60,18 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <!-- Extension Primefaces -->
+        <dependency>
+            <groupId>org.primefaces.extensions</groupId>
+            <artifactId>resources-ckeditor</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.primefaces.extensions</groupId>
+            <artifactId>resources-codemirror</artifactId>
+            <version>4.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
