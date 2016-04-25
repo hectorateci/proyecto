@@ -13,8 +13,6 @@ import java.sql.Date;
  */
 public class Equipo {
 
-
-
     private String nombre;
     private String marca;
     private Boolean estado;

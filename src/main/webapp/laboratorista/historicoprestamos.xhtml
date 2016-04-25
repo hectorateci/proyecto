@@ -103,175 +103,60 @@ and open the template in the editor.
                     <p:column colspan="2">"Null"</p:column>
                 </p:row>
                 
-                <f:facet name="footer">
-                    <p:row>
-                        <p:column colspan="6">HISTORIAL </p:column>
-                    </p:row>
-                </f:facet>
                 
-                <p:row>
-                    <p:column colspan="6" styleClass="ui-widget-header">
-                        <p:spacer height="0"/>
-                    </p:column>
-                </p:row>
-            
-                <p:row>
-                    <p:column style="font-weight: bold;"> Revisado por: </p:column>
-                    <p:column colspan="2">"Null"</p:column>
-                    <p:column style="font-weight: bold;"> Vo.Bo: </p:column>
-                    <p:column colspan="2">"Null"</p:column>
-                </p:row>
-                <p:row>
-                    <p:column style="font-weight: bold;"> Fecha: </p:column>
-                    <p:column colspan="2">"Null"</p:column>
-                    <p:column style="font-weight: bold;"> Fecha:</p:column>
-                    <p:column colspan="2">"Null"</p:column>
-                </p:row>
-                
-            </p:panelGrid>
-                <p:panelGrid >
-                    <p:dataTable var="car" value="NULL" scrollable="true" scrollHeight="150">
-                        <p:column headerText="Id" footerText="Id">
-                            <h:outputText value="NUll" />
-                        </p:column>
-                        <p:column headerText="Year" footerText="Year">
-                            <h:outputText value="NUll" />
-                        </p:column>
-                        <p:column headerText="Brand" footerText="Brand">
-                            <h:outputText value="NULL" />
-                        </p:column>
-                        <p:column headerText="Color" footerText="Color">
-                            <h:outputText value="NULL" />
-                        </p:column>
-                    </p:dataTable>
-                </p:panelGrid>
+        </p:panelGrid>
         
-   
-                <!--
-                <f:facet name="header">
-                    <p:row>
-                        <p:column colspan="7">NOMBRE DEL EQUIPO: </p:column>
-                        <p:column colspan="7">"Multimetro-Ternometro" </p:column>
-                    </p:row>
-                    <p:row>
-                    <p:column colspan="7" styleClass="ui-widget-header">
-                        <p:spacer height="0"/>
-                    </p:column>
-                    <p:column colspan="2" styleClass="ui-widget-header">
-                        <p:spacer height="0"/>
-                    </p:column>
-                    </p:row>
-                    <p:row>
-                        <p:column colspan="2">MARCA: </p:column>
-                        <p:column colspan="2">"Extech 430"</p:column>
-                        <p:column colspan="2">REFER O SERIAL: </p:column>
-                        <p:column colspan="2">"061007781" </p:column>
-                    </p:row>
+        
+        <p:dataTable var="prestamos" value="#{HistoricoPrestamosBean.historialPorEquipo}" scrollable="true" scrollHeight="150">
+            <f:facet name="header">
+                HISTORIAL
+            </f:facet>
 
-                </f:facet>
+            <p:column headerText="-Fecha Préstamo-">
+                <h:outputText value="25/4/2016" />
+            </p:column>
+            
+            <p:column headerText="Carnet">
+                <h:outputText value="123456" />
+            </p:column>
+            
+            <p:column headerText="Usuario">
+                <h:outputText value="Kevin" />
+            </p:column>
 
-                <p:row>
-                    <p:column style="font-weight: bold;">Seattle</p:column>
-                    <p:column style="font-weight: bold;">4</p:column>
+            <p:column headerText="Fecha de Vencimiento">
+                <h:outputText value="05/05/2016" />
+            </p:column>
 
-                    <p:column rowspan="2" style="font-weight: bold;">Seattle</p:column>
-                    <p:column rowspan="2" style="font-weight: bold;">4</p:column>
+            <p:column headerText="Observaciones">
+                <h:outputText value="Esta en buen estado" />
+            </p:column>
 
-                    <p:column rowspan="5">Seattle</p:column>
-                    <p:column rowspan="5">2</p:column>
-
-                    <p:column rowspan="11" style="font-weight: bold;">Chicago</p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column>Houston</p:column>
-                    <p:column >0</p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column colspan="4" styleClass="ui-widget-header">
-                        <p:spacer height="0"/>
-                    </p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column style="font-weight: bold;">Utah</p:column>
-                    <p:column style="font-weight: bold;">4</p:column>
-
-                    <p:column rowspan="2">Utah</p:column>
-                    <p:column rowspan="2">3</p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column>San Antonio</p:column>
-                    <p:column >2</p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column colspan="6" styleClass="ui-widget-header">
-                        <p:spacer height="0"/>
-                    </p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column style="font-weight: bold;">Chicago</p:column>
-                    <p:column style="font-weight: bold;">4</p:column>
-
-                    <p:column rowspan="2" style="font-weight: bold;">Chicago</p:column>
-                    <p:column rowspan="2" style="font-weight: bold;">4</p:column>
-
-                    <p:column rowspan="5" style="font-weight: bold;">Chicago</p:column>
-                    <p:column rowspan="5" style="font-weight: bold;">4</p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column>New York</p:column>
-                    <p:column >1</p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column colspan="4" styleClass="ui-widget-header">
-                        <p:spacer height="0"/>
-                    </p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column>Atlanta</p:column>
-                    <p:column >1</p:column>
-
-                    <p:column rowspan="2">Orlando</p:column>
-                    <p:column rowspan="2">0</p:column>
-                </p:row>
-
-                <p:row>
-                    <p:column style="font-weight: bold;">Orlando</p:column>
-                    <p:column style="font-weight: bold;">4</p:column>
-                </p:row>
-
-
-                <f:facet name="footer">
-                    <p:row>
-                        <p:column  colspan="4" style="text-align: right">
-                            Finals MVP
-                        </p:column>
-                        <p:column  colspan="3" rowspan="3">
-                            Michael Jordan (Chicago)
-                        </p:column>
-                    </p:row>
-
-                    <p:row>
-                        <p:column  colspan="4" style="text-align: right">
-                            Season MVP
-                        </p:column>
-                    </p:row>
-                    <p:row>
-                        <p:column  colspan="4" style="text-align: right">
-                            Top Scorer
-                        </p:column>
-                    </p:row>
-                </f:facet>
-            </p:panelGrid>
-        -->
+            <f:facet name="footer">
+                En total hay "1" prestamo.
+            </f:facet>
+        </p:dataTable>
+        
+        <p:panelGrid>
+            <p:row>
+                <p:column colspan="6" styleClass="ui-widget-header">
+                    <p:spacer height="0"/>
+                </p:column>
+            </p:row>
+            
+            <p:row>
+                <p:column style="font-weight: bold;"> Revisado por: </p:column>
+                <p:column colspan="2">"Null"</p:column>
+                <p:column style="font-weight: bold;"> Vo.Bo: </p:column>
+                <p:column colspan="2">"Null"</p:column>
+            </p:row>
+            <p:row>
+                <p:column style="font-weight: bold;"> Fecha: </p:column>
+                <p:column colspan="2">"Null"</p:column>
+                <p:column style="font-weight: bold;"> Fecha:</p:column>
+                <p:column colspan="2">"Null"</p:column>
+            </p:row>
+        </p:panelGrid>
         </h:form> 
         
     </h:body>
