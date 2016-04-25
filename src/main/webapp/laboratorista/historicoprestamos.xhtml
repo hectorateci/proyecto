@@ -15,7 +15,7 @@ and open the template in the editor.
     <h:body>
         <h:form id="formulario_historial">
         <h3>LABORATORIO ELECTRONICA</h3>
-        <p:panelGrid style="margin-top:25px" columnClasses="centered">
+        <p:panelGrid style="margin-top:25px" styleClass="panelGridCenter">
                 <f:facet name="header">
                     <p:row>
                         <p:column colspan="6">LABORATORIO ELECTRONICA </p:column>
@@ -41,10 +41,22 @@ and open the template in the editor.
                 </p:row>
                 
                 <p:row>
+                    <p:column colspan="6" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+            
+                <p:row>
                     <p:column style="font-weight: bold;" colspan="2"> REFERENCIA INTERNA LAB: </p:column>
                     <p:column colspan="2">"Ternometro M21"</p:column>
                     <p:column style="font-weight: bold;"> ESTADO: </p:column>
                     <p:column>"ACTIVO"</p:column>
+                </p:row>
+            
+                <p:row>
+                    <p:column colspan="6" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
                 </p:row>
                 
                 <p:row>
@@ -52,6 +64,12 @@ and open the template in the editor.
                     <p:column colspan="4">"Puntas de Multimetro y termocupla tipo K"</p:column>
                 </p:row>
                 
+                <p:row>
+                    <p:column colspan="6" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+            
                 <p:row>
                     <p:column style="font-weight: bold;" colspan="2"> Descripcion del equipo: </p:column>
                     <p:column colspan="4">"Digital autoescala en DCV,CAV,DCA, °F°C, COndensadores, %Hz, Ohomios, Diodo y Continuidad, TRUE RMS"</p:column>
@@ -91,6 +109,12 @@ and open the template in the editor.
                     </p:row>
                 </f:facet>
                 
+                <p:row>
+                    <p:column colspan="6" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+            
                 <p:row>
                     <p:column style="font-weight: bold;"> Revisado por: </p:column>
                     <p:column colspan="2">"Null"</p:column>
