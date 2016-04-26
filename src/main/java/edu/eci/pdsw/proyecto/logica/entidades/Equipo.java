@@ -30,6 +30,24 @@ public class Equipo {
     private String proveedor;
     private String descripcionEstado;
     private List<prestamo> prestamoEquipo = new LinkedList<prestamo>();
+    private String serial;
+
+    public String getSerial() {
+        return serial;
+    }
+
+    public void setSerial(String serial) {
+        this.serial = serial;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+    private String placa;
     
     /**
      * 
@@ -72,8 +90,8 @@ public class Equipo {
      * @param placa 
      */
     public Equipo(String serial, String placa){
-        throw new RuntimeException("No se ha implementado el metodo constructor 'Equipo'");
-            
+        this.serial = serial;
+        this.placa = placa;
     }
     
     /**
@@ -81,7 +99,7 @@ public class Equipo {
      * @param serial 
      */
     public Equipo(String serial){
-        throw new RuntimeException("No se ha implementado el metodo constructor 'Equipo'");
+        this.serial=serial;
     }
     
 

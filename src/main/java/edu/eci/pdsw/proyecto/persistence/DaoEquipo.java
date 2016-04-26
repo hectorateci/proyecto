@@ -6,6 +6,7 @@
 package edu.eci.pdsw.proyecto.persistence;
 
 import edu.eci.pdsw.proyecto.logica.entidades.Equipo;
+import java.util.List;
 
 /**
  *
@@ -14,7 +15,7 @@ import edu.eci.pdsw.proyecto.logica.entidades.Equipo;
 public interface DaoEquipo {
     
     public Equipo loadEspecific(String serial);
-    public Equipo loadByModel(String modelo, String placa);
+    public List<Equipo> loadByModel(String modelo, String placa);
     public void save(Equipo e);
     
 }

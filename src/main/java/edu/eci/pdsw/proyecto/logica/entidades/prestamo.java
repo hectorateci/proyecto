@@ -16,10 +16,10 @@ public class prestamo {
     private Date fechaSolicitud ;
     private Date fechaDevolucion ;
     private Usuario Usuario ;
-    Set<Equipo> items;
+    List<Equipo> items;
     private String detalle;
     
-    public prestamo(     Date fechaSolicitud ,Date fechaDevolucion,Usuario Usuario ,Set<Equipo> items,
+    public prestamo(     Date fechaSolicitud ,Date fechaDevolucion,Usuario Usuario ,List<Equipo> items,
      String detalle ) {
         this.Usuario=Usuario;
         this.detalle=detalle;
@@ -52,11 +52,11 @@ public class prestamo {
         this.Usuario = Usuario;
     }
 
-    public Set<Equipo> getItems() {
+    public List<Equipo> getItems() {
         return items;
     }
 
-    public void setItems(Set<Equipo> items) {
+    public void setItems(List<Equipo> items) {
         this.items = items;
     }
 
