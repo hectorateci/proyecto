@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Usuario.java
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/prestamo.java
+/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoFactory.java
+/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/prestamo.java
+/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/Usuario.java
+/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/Equipo.java
 /Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Equipo.java
-=======
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Usuario.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/prestamo.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Equipo.java
->>>>>>> c2cb60c1776a06c1ed5135e2511125f30fecc2c5
+/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoEquipo.java
+/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoFactoryMybatis.java

@@ -5,9 +5,9 @@
  */
 package edu.eci.pdsw.webapp.controller;
 
-import edu.eci.pdsw.proyecto.logica.entiddes.Equipo;
-import edu.eci.pdsw.proyecto.logica.entiddes.Usuario;
-import edu.eci.pdsw.proyecto.logica.entiddes.prestamo;
+import edu.eci.pdsw.proyecto.logica.entidades.Equipo;
+import edu.eci.pdsw.proyecto.logica.entidades.Usuario;
+import edu.eci.pdsw.proyecto.logica.entidades.prestamo;
 import java.io.Serializable;
 import java.sql.Date;
 import java.text.ParseException;
