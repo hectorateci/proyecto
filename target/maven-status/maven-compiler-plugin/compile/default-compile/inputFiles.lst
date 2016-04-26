@@ -1,35 +1,12 @@
-<<<<<<< HEAD
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoFactory.java
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/prestamo.java
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/Usuario.java
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/Equipo.java
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoEquipo.java
-/Users/JuanHerrera/Documents/PDSW/proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoFactoryMybatis.java
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-/home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Equipo.java
-/home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/prestamo.java
-/home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/services/ProyectoServices.java
-/home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
-/home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Usuario.java
-=======
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Usuario.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/prestamo.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Equipo.java
->>>>>>> c2cb60c1776a06c1ed5135e2511125f30fecc2c5
-||||||| merged common ancestors
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Usuario.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/prestamo.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
-/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Equipo.java
-=======
-C:\Users\Kevin\Documents\proyecto\src\main\java\edu\eci\pdsw\proyecto\logica\entiddes\Usuario.java
-C:\Users\Kevin\Documents\proyecto\src\main\java\edu\eci\pdsw\webapp\controller\BeanPrueba.java
-C:\Users\Kevin\Documents\proyecto\src\main\java\edu\eci\pdsw\proyecto\logica\entiddes\prestamo.java
-C:\Users\Kevin\Documents\proyecto\src\main\java\edu\eci\pdsw\proyecto\logica\entiddes\Equipo.java
-C:\Users\Kevin\Documents\proyecto\src\main\java\edu\eci\pdsw\webapp\controller\historicoPrestamosBean.java
->>>>>>> 84c4cc201e3606c344c3acf065f3508ae57684b3
->>>>>>> 3464f87ac2df226bf64093b50431df2c37663f41
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoEquipoMybatis.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/mybatis/mappers/EquipoMapper.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoFactoryMybatis.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/services/ProyectoServices.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/BeanPrueba.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/Usuario.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoFactory.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/bean/inventario.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/Equipo.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/persistence/DaoEquipo.java
+/home/local/LABINFO/2098654/Downloads/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entidades/prestamo.java

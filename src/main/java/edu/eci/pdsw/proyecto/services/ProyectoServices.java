@@ -6,21 +6,55 @@
 package edu.eci.pdsw.proyecto.services;
 
 import edu.eci.pdsw.proyecto.logica.entidades.Equipo;
+import edu.eci.pdsw.proyecto.persistence.DaoFactory;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 /**
  *
  * @author nicolas
  */
+
 public class ProyectoServices {
+    
+    private static ProyectoServices instance=null;
+    
+    private final Properties properties=new Properties();
+    
+    private ProyectoServices (String nombre) throws IOException{
+        InputStream entrada = null;
+        entrada=this.getClass().getClassLoader().getResourceAsStream(nombre);
+        properties.load(entrada);
+    }
    
+    
+    public static ProyectoServices getInstance(String propertiesNombre ) throws RuntimeException, IOException{
+        if (instance ==null){
+             try {
+                instance=new ProyectoServices(propertiesNombre);
+            } catch (IOException exep) {
+                throw new RuntimeException("Error on application configuration:",exep);
+            }
+        }    
+        return instance;
+    }
     /**
      * Registra un equipo en el inventario.
      * @param eq 
      */
     public void registrarEquipo(Equipo eq){
-        throw new RuntimeException("No se ha implementado el metodo 'registrarEquipo'");
+       
+        DaoFactory daoFac =DaoFactory.getInstance(properties);
+        daoFac.beginSession();
+        daoFac.getDaoEquipo().save(eq);
+        daoFac.commitTransaction();
+        daoFac.endSession();
         
+                
     }
+    
+    
     
     /**
      * Consulta si hay un modelo de equipo ya existente.
@@ -28,8 +62,13 @@ public class ProyectoServices {
      * @return si un modelo esta o no.
      */
     public boolean consultarModelo(String modelo){
-        throw new RuntimeException("No se ha implementado el metodo 'consultarEquipo'");
-        //return false;
+   
+        DaoFactory daoFac=DaoFactory.getInstance(properties);
+        daoFac.beginSession();
+        daoFac.getDaoEquipo().loadEspecific(modelo);
+        daoFac.commitTransaction();
+        daoFac.endSession();
+        return false;
     }
     
     /**
@@ -38,6 +77,10 @@ public class ProyectoServices {
      * @param modelo
      */
     public void aumentarInventario(String modelo,int cant){
-    
+    DaoFactory daoFac=DaoFactory.getInstance(properties);
+    daoFac.beginSession();
+    daoFac.getDaoEquipo();
+    daoFac.commitTransaction();
+    daoFac.endSession();
     }
 }
