@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:pe="http://primefaces.org/ui/extensions">
+    
+    <h:head></h:head>
+    
+    <h:body style="text-align: center;">
+        <h:form id="formulario_consulta_historial">
+            
+            <h1 style="text-align: center; color: blue;">Consulta Historial de Equipos</h1>
+            <img src="http://www.escuelaing.edu.co/uploads/descargables/1193_logo_horizontal.jpg" width="200" height="100" alt="Escuela Colombiana de Ingenieria" align="left"/>
+            <label>Nombre del Equipo</label>
+            
+            <br/>
+            <p:inputText value="NULL"/>
+            <br/>
+            
+            <br/>
+            <p:commandButton style="text-align: center;"
+                
+                update="formulario_consulta_historial" value="Buscar" >
+                
+            </p:commandButton>
+            <br/>
+            
+            <br/>
+            <p:dataTable var="equipos" value="#{BeanPruebas.historialPorEquipo}" scrollable="true" scrollHeight="300">
+                <f:facet name="header">
+                    Lista de Equipos
+                </f:facet>
+                <p:column headerText="Nombre" >
+                    <h:outputText value="Martillo"/>
+                </p:column>
+                
+                <!--
+                sortBy="#{equipos.marca}" filterBy="#{equipos.marca}" 
+                -->
+                
+                <p:column headerText="Marca" >
+                    <h:outputText value="Bauker"/>
+                </p:column>
+                <p:column headerText="Fecha de Adquisición" >
+                    <h:outputText value="12/02/45"/>
+                </p:column>
+                <p:column headerText="Estado">
+                    <h:outputText value="Activo"/>
+                </p:column>
+                <p:column headerText="Historial">
+                    <p:commandButton action="historicoprestamos" value="Historial">
+                        <f:setPropertyActionListener value="#{equipos}" target="Equipo Seleccionado"/>
+                    </p:commandButton>
+                </p:column>
+            </p:dataTable>
+            <br/>
+        </h:form>
+    </h:body>
+</html>
