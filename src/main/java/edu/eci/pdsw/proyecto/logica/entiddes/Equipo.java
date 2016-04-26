@@ -28,6 +28,23 @@ public class Equipo {
     private String proveedor;
     private String descripcion_estado;
     
+    /**
+     * 
+     * @param nombre
+     * @param marca
+     * @param estado
+     * @param descripcion
+     * @param fecha_adquisicion
+     * @param fecha_garantia
+     * @param valor
+     * @param orden_compra
+     * @param codigo_activo
+     * @param asegurado
+     * @param categoria
+     * @param tiempo_uso
+     * @param proveedor
+     * @param descripcion_estado 
+     */
     public  Equipo (String nombre,String marca,Boolean estado,String descripcion,Date fecha_adquisicion , Date fecha_garantia ,int valor  ,String orden_compra,String codigo_activo,Boolean asegurado ,String categoria,int tiempo_uso,String proveedor,String descripcion_estado){
         this .nombre=nombre;
         this.marca=marca;
@@ -44,11 +61,27 @@ public class Equipo {
         this.proveedor=proveedor;
         this.descripcion_estado=descripcion_estado;
                 
+    }
     
+    /**
+     * 
+     * @param serial
+     * @param placa 
+     */
+    public Equipo(String serial, String placa){
+        throw new RuntimeException("No se ha implementado el metodo constructor 'Equipo'");
             
-}
+    }
+    /**
+     * 
+     * @param serial 
+     */
+    public Equipo(String serial){
+        throw new RuntimeException("No se ha implementado el metodo constructor 'Equipo'");
+    }
     
-        public String getNombre() {
+    
+    public String getNombre() {
         return nombre;
     }
 

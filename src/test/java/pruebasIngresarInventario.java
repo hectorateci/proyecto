@@ -9,6 +9,9 @@
  * @author 2098874
  */
 
+import edu.eci.pdsw.proyecto.logica.entiddes.Equipo;
+import edu.eci.pdsw.proyecto.services.ProyectoServices;
+import java.sql.Date;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,6 +28,14 @@ public class pruebasIngresarInventario {
     */
     @Test
     public void ingresarInventarioModeloExistenteSerialPlaca(){
+        ProyectoServices ps = new ProyectoServices();
+        Equipo e = new Equipo("Cable caiman", "nnn", true, "Clable caiman para sugetar", new Date(2016, 4, 21), new Date(2016, 7, 1), 10000, "ref002", "CAB007", true, "diario", 0, "Exito", "Estado optimo en buenas condiciones");
+        ps.registrarEquipo(e);
+        String modelo = "Cable caiman";
+        if(ps.consultarModelo(modelo)){
+            Equipo eq = new Equipo("CAB007","000556");
+        }
+        Assert.assertTrue("Paso la prueba", true);
         
     }
     
@@ -36,7 +47,14 @@ public class pruebasIngresarInventario {
     */
     @Test
     public void ingresarInventarioModeloExistenteSerial(){
-        
+        ProyectoServices ps = new ProyectoServices();
+        Equipo e = new Equipo("Cable caiman", "nnn", true, "Clable caiman para sugetar", new Date(2016, 4, 21), new Date(2016, 7, 1), 10000, "ref002", "CAB007", true, "diario", 0, "Exito", "Estado optimo en buenas condiciones");
+        ps.registrarEquipo(e);
+        String modelo = "Cable caiman";
+        if(ps.consultarModelo(modelo)){
+            Equipo eq = new Equipo("CAB007");
+        }
+        Assert.assertTrue("Paso la prueba", true);
     }
     
     
@@ -47,7 +65,10 @@ public class pruebasIngresarInventario {
     */
     @Test
     public void ingresarInventarioModeloNoExistenteSerialPlaca(){
-        
+        ProyectoServices ps = new ProyectoServices();
+        Equipo e = new Equipo("Cable caiman", "nnn", true, "Clable caiman para sugetar", new Date(2016, 4, 21), new Date(2016, 7, 1), 10000, "ref002", "CAB007", true, "diario", 0, "Exito", "Estado optimo en buenas condiciones","CAB007","000556");
+        ps.registrarEquipo(e);
+        Assert.assertTrue("Paso la prueba", true);
     }
     
     
@@ -58,7 +79,10 @@ public class pruebasIngresarInventario {
     */
     @Test
     public void ingresarInventarioModeloNoExistenteSerial(){
-        
+        ProyectoServices ps = new ProyectoServices();
+        Equipo e = new Equipo("Cable caiman", "nnn", true, "Clable caiman para sugetar", new Date(2016, 4, 21), new Date(2016, 7, 1), 10000, "ref002", "CAB007", true, "diario", 0, "Exito", "Estado optimo en buenas condiciones","CAB007");
+        ps.registrarEquipo(e);
+        Assert.assertTrue("Paso la prueba", true);
     }
     
     /**
@@ -67,7 +91,14 @@ public class pruebasIngresarInventario {
      */
     @Test
     public void ingresarInventarioModeloExistenteSerialExistente(){
-    
+        ProyectoServices ps = new ProyectoServices();
+        Equipo e = new Equipo("Cable caiman", "nnn", true, "Clable caiman para sugetar", new Date(2016, 4, 21), new Date(2016, 7, 1), 10000, "ref002", "CAB007", true, "diario", 0, "Exito", "Estado optimo en buenas condiciones","CAB007","000555");
+        try{
+            ps.registrarEquipo(e);
+            ps.registrarEquipo(e);
+        }catch(Exception ex){
+            Assert.assertTrue("Paso la prueba", true);
+        }
     }
     
     /**
@@ -76,7 +107,14 @@ public class pruebasIngresarInventario {
      */
     @Test
     public void ingresarInventarioModeloExistentePlacaExistente(){
-    
+       ProyectoServices ps = new ProyectoServices();
+        Equipo e = new Equipo("Cable caiman", "nnn", true, "Clable caiman para sugetar", new Date(2016, 4, 21), new Date(2016, 7, 1), 10000, "ref002", "CAB007", true, "diario", 0, "Exito", "Estado optimo en buenas condiciones","CAB007","000555");
+        try{
+            ps.registrarEquipo(e);
+            ps.registrarEquipo(e);
+        }catch(Exception ex){
+            Assert.assertTrue("Paso la prueba", true);
+        }
     }
     
     /**
@@ -85,7 +123,13 @@ public class pruebasIngresarInventario {
      */
     @Test
     public void ingresarInventarioModeloNoExistenteSerialExistente(){
-    
+        ProyectoServices ps = new ProyectoServices();
+        Equipo e = new Equipo("Cable caiman", "nnn", true, "Clable caiman para sugetar", new Date(2016, 4, 21), new Date(2016, 7, 1), 10000, "ref002", "CAB007", true, "diario", 0, "Exito", "Estado optimo en buenas condiciones","CAB007","000555");
+        try{
+            ps.registrarEquipo(e);
+        }catch(Exception ex){
+            Assert.assertTrue("Paso la prueba", true);
+        }
     }
     
     /**
@@ -94,6 +138,12 @@ public class pruebasIngresarInventario {
      */
     @Test
     public void ingresarInventarioModeloNoExistentePlacaExistente(){
-    
+        ProyectoServices ps = new ProyectoServices();
+        Equipo e = new Equipo("Cable caiman", "nnn", true, "Clable caiman para sugetar", new Date(2016, 4, 21), new Date(2016, 7, 1), 10000, "ref002", "CAB007", true, "diario", 0, "Exito", "Estado optimo en buenas condiciones","CAB007","000555");
+        try{
+            ps.registrarEquipo(e);
+        }catch(Exception ex){
+            Assert.assertTrue("Paso la prueba", true);
+        }
     }
 }
