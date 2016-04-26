@@ -6,6 +6,8 @@
 package edu.eci.pdsw.proyecto.logica.entiddes;
 
 import java.sql.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  *
@@ -27,6 +29,7 @@ public class Equipo {
     private int tiempoUso;
     private String proveedor;
     private String descripcionEstado;
+    private List<prestamo> prestamoEquipo = new LinkedList<prestamo>();
     
     public  Equipo (String nombre,String marca,Boolean estado,String descripcion,Date fecha_adquisicion , Date fecha_garantia ,int valor  ,String orden_compra,String codigo_activo,Boolean asegurado ,String categoria,int tiempo_uso,String proveedor,String descripcion_estado){
         this .nombre=nombre;
@@ -46,9 +49,12 @@ public class Equipo {
                 
     
             
-}
+    }
+    public List<prestamo> getEquipoPrestamo(){
+        return prestamoEquipo;
+    }
     
-        public String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
