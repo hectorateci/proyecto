@@ -22,21 +22,16 @@ public class ProyectoServices {
     
     private final Properties properties=new Properties();
     
-    private ProyectoServices (String nombre) throws IOException{
-        InputStream entrada = null;
-        entrada=this.getClass().getClassLoader().getResourceAsStream(nombre);
-        properties.load(entrada);
+    private ProyectoServices () throws IOException{
+        InputStream input = null;
+        input = servicesP.class.getClassLoader().getResource("applicationconfig.properties").openStream();       
+        Properties properties=new Properties();
+        properties.load(input);
     }
    
     
     public static ProyectoServices getInstance(String propertiesNombre ) throws RuntimeException, IOException{
-        if (instance ==null){
-             try {
-                instance=new ProyectoServices(propertiesNombre);
-            } catch (IOException exep) {
-                throw new RuntimeException("Error on application configuration:",exep);
-            }
-        }    
+        
         return instance;
     }
     /**
