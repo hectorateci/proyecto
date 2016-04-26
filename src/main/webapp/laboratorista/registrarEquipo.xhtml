@@ -19,14 +19,20 @@
             <p:inputText></p:inputText>
             <br/>
             <br/>
-            <p:commandButton value="Consultar" ajax="false" onclick="panelRegistro.show();">
+            <p:commandButton value="Consultar" update="formRegistro" onclick="panelRegistro.show();">
             </p:commandButton>
+            <br/>
+            <br/>
             <p:panel widgetVar="panelRegistro" visible="false" closable="true" toggleable="true">
-                <p:outputLabel value="Ingrese numero serial"/>
+                <p:outputLabel value="Ingrese numero serial: "/>
                 <p:inputText></p:inputText>
                 <br/>
-                <p:outputLabel value="Ingrese el numero de placa"/>
+                <p:outputLabel value="Ingrese el numero de placa: "/>
                 <p:inputText></p:inputText>
+                <br/>
+                <br/>
+                <br/>
+                <p:commandButton value="Registrar"></p:commandButton>
             </p:panel>
         </h:form>
     </h:body>
