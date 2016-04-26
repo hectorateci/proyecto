@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 /home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Equipo.java
 /home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/prestamo.java
 /home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/services/ProyectoServices.java
 /home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
 /home/nicolas/Documents/Universidad/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Usuario.java
+=======
+/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Usuario.java
+/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/prestamo.java
+/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/webapp/controller/historicoPrestamosBean.java
+/home/jairogonzalez/PDSW/Proyecto/proyecto/src/main/java/edu/eci/pdsw/proyecto/logica/entiddes/Equipo.java
+>>>>>>> c2cb60c1776a06c1ed5135e2511125f30fecc2c5
