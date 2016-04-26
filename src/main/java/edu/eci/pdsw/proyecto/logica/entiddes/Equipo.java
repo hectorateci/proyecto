@@ -19,32 +19,32 @@ public class Equipo {
     private String marca;
     private Boolean estado;
     private String descripcion;
-    private Date fecha_adquisicion ;
-    private Date fecha_garantia ;
+    private Date fechaAdquisicion ;
+    private Date fechaGarantia ;
     private int valor  ;
-    private String orden_compra;
-    private String codigo_activo;
+    private String ordenCompra;
+    private String codigoActivo;
     private Boolean asegurado ;
     private String categoria;
-    private int tiempo_uso;
+    private int tiempoUso;
     private String proveedor;
-    private String descripcion_estado;
+    private String descripcionEstado;
     
     public  Equipo (String nombre,String marca,Boolean estado,String descripcion,Date fecha_adquisicion , Date fecha_garantia ,int valor  ,String orden_compra,String codigo_activo,Boolean asegurado ,String categoria,int tiempo_uso,String proveedor,String descripcion_estado){
         this .nombre=nombre;
         this.marca=marca;
         this.estado=estado;
         this.descripcion=descripcion;
-        this.fecha_adquisicion=fecha_adquisicion;
-        this.fecha_garantia=fecha_garantia;
+        this.fechaAdquisicion=fecha_adquisicion;
+        this.fechaGarantia=fecha_garantia;
         this.valor=valor;
-        this.orden_compra=orden_compra;
-        this.codigo_activo=codigo_activo;
+        this.ordenCompra=orden_compra;
+        this.codigoActivo=codigo_activo;
         this.asegurado=asegurado;
         this.categoria=categoria;
-        this.tiempo_uso=tiempo_uso;
+        this.tiempoUso=tiempo_uso;
         this.proveedor=proveedor;
-        this.descripcion_estado=descripcion_estado;
+        this.descripcionEstado=descripcion_estado;
                 
     
             
@@ -83,19 +83,19 @@ public class Equipo {
     }
 
     public Date getFecha_adquisicion() {
-        return fecha_adquisicion;
+        return fechaAdquisicion;
     }
 
     public void setFecha_adquisicion(Date fecha_adquisicion) {
-        this.fecha_adquisicion = fecha_adquisicion;
+        this.fechaAdquisicion = fecha_adquisicion;
     }
 
     public Date getFecha_garantia() {
-        return fecha_garantia;
+        return fechaGarantia;
     }
 
     public void setFecha_garantia(Date fecha_garantia) {
-        this.fecha_garantia = fecha_garantia;
+        this.fechaGarantia = fecha_garantia;
     }
 
     public int getValor() {
@@ -107,19 +107,19 @@ public class Equipo {
     }
 
     public String getOrden_compra() {
-        return orden_compra;
+        return ordenCompra;
     }
 
     public void setOrden_compra(String orden_compra) {
-        this.orden_compra = orden_compra;
+        this.ordenCompra = orden_compra;
     }
 
     public String getCodigo_activo() {
-        return codigo_activo;
+        return codigoActivo;
     }
 
     public void setCodigo_activo(String codigo_activo) {
-        this.codigo_activo = codigo_activo;
+        this.codigoActivo = codigo_activo;
     }
 
     public Boolean getAsegurado() {
@@ -139,11 +139,11 @@ public class Equipo {
     }
 
     public int getTiempo_uso() {
-        return tiempo_uso;
+        return tiempoUso;
     }
 
     public void setTiempo_uso(int tiempo_uso) {
-        this.tiempo_uso = tiempo_uso;
+        this.tiempoUso = tiempo_uso;
     }
 
     public String getProveedor() {
@@ -155,11 +155,11 @@ public class Equipo {
     }
 
     public String getDescripcion_estado() {
-        return descripcion_estado;
+        return descripcionEstado;
     }
 
     public void setDescripcion_estado(String descripcion_estado) {
-        this.descripcion_estado = descripcion_estado;
+        this.descripcionEstado = descripcion_estado;
     }
 
 }
