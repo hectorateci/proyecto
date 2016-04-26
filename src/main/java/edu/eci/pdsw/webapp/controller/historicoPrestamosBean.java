@@ -28,8 +28,8 @@ import javax.faces.bean.SessionScoped;
 public class historicoPrestamosBean implements Serializable {
     private Equipo equipoSeleccionado;
     private prestamo prestamoDeEquipo;
-    private List<Equipo> listaDeEquipos;
-    private List<prestamo> listaDePrestamos ;
+    private List<Equipo> listaDeEquipos = new ArrayList<Equipo>();
+    private List<prestamo> listaDePrestamos = new ArrayList<prestamo>();
     private ArrayList<String> ejemplo = new ArrayList<>();
     
     private Equipo getEquipoSeleccionado(){
@@ -38,16 +38,18 @@ public class historicoPrestamosBean implements Serializable {
     public List<Equipo> getListaDeEquipos(){
         return listaDeEquipos;
     }
-    public ArrayList<String> getHistorialPorEquipo(){ 
-       ejemplo.add("Ejemplo");
-       ejemplo.add("Hola");
-       return ejemplo;
+    public List<prestamo> getHistorialPorEquipo(){ 
+        for (int i =0;i<=equipoSeleccionado.getEquipoPrestamo().size();i++){
+            listaDePrestamos.add( equipoSeleccionado.getEquipoPrestamo().get(i));
+        }
+        return listaDePrestamos;
        //return listaDePrestamos;
     }
     
-    public void setHistorialPorEquipo(ArrayList<String> a){ 
-       this.ejemplo = a;
+    public void setHistorialPorEquipo(ArrayList<prestamo> a){ 
+       this.listaDePrestamos = a;
        //return listaDePrestamos;
     }
+    
     
 }
