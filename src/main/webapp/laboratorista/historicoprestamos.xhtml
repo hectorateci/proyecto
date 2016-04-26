@@ -12,10 +12,16 @@ and open the template in the editor.
       xmlns:pe="http://primefaces.org/ui/extensions">
     <h:head></h:head>
 
-    <h:body>
+    <h:body style="text-align: center;">
         <h:form  id="formulario_historial">
-        <h3>LABORATORIO ELECTRONICA</h3>
-        <p:panelGrid  style="margin-top:25px" styleClass="panelGridCenter">
+            
+        <img src="http://www.escuelaing.edu.co/uploads/descargables/1193_logo_horizontal.jpg" width="200" height="100" alt="Escuela Colombiana de Ingenieria" align="center"/>
+        
+        <br/>
+        <h1 style="text-align: center; color: red">LABORATORIO ELECTRONICA</h1>
+        <br/>
+        
+        <p:panelGrid style="margin-top:25px" styleClass="panelGridCenter">
                 <f:facet name="header">
                     <p:row>
                         <p:column colspan="6">LABORATORIO ELECTRONICA </p:column>
@@ -107,7 +113,7 @@ and open the template in the editor.
         </p:panelGrid>
         
         
-        <p:dataTable var="prestamos" value="#{HistoricoPrestamosBean.historialPorEquipo}" scrollable="true" scrollHeight="150">
+        <p:dataTable var="prestamos" value="#{BeanPruebas.historialPorEquipo}" scrollable="true" scrollHeight="150">
             <f:facet name="header">
                 HISTORIAL
             </f:facet>
@@ -137,7 +143,7 @@ and open the template in the editor.
             </f:facet>
         </p:dataTable>
         
-        <p:panelGrid>
+        <p:panelGrid >
             <p:row>
                 <p:column colspan="6" styleClass="ui-widget-header">
                     <p:spacer height="0"/>

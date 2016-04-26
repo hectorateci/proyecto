@@ -40,6 +40,12 @@ public interface EquipoMapper {
      * @return
      */
     public List<Equipo> loadEquiposByModel(@Param("modelo")String modelo);
+    
+    /**
+     * Guardar los datos
+     * @param e
+     */
+    public void saveEquipos(@Param("equipo")Equipo e);
 }
     
     

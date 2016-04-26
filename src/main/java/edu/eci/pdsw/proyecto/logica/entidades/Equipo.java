@@ -31,28 +31,64 @@ public class Equipo {
     private String descripcionEstado;
     private List<prestamo> prestamoEquipo = new LinkedList<prestamo>();
     
-    public  Equipo (String nombre,String marca,Boolean estado,String descripcion,Date fecha_adquisicion , Date fecha_garantia ,int valor  ,String orden_compra,String codigo_activo,Boolean asegurado ,String categoria,int tiempo_uso,String proveedor,String descripcion_estado){
-        this .nombre=nombre;
+    /**
+     * 
+     * @param nombre
+     * @param marca
+     * @param estado
+     * @param descripcion
+     * @param fechaAdquisicion
+     * @param fechaGarantia
+     * @param valor
+     * @param ordenCompra
+     * @param codigoActivo
+     * @param asegurado
+     * @param categoria
+     * @param tiempoUso
+     * @param proveedor
+     * @param descripcionEstado 
+     */
+    public  Equipo (String nombre,String marca,Boolean estado,String descripcion,Date fechaAdquisicion , Date fechaGarantia ,int valor  ,String ordenCompra,String codigoActivo,Boolean asegurado ,String categoria,int tiempoUso,String proveedor,String descripcionEstado){
+        this.nombre=nombre;
         this.marca=marca;
         this.estado=estado;
         this.descripcion=descripcion;
-        this.fechaAdquisicion=fecha_adquisicion;
-        this.fechaGarantia=fecha_garantia;
+        this.fechaAdquisicion=fechaAdquisicion;
+        this.fechaGarantia=fechaGarantia;
         this.valor=valor;
-        this.ordenCompra=orden_compra;
-        this.codigoActivo=codigo_activo;
+        this.ordenCompra=ordenCompra;
+        this.codigoActivo=codigoActivo;
         this.asegurado=asegurado;
         this.categoria=categoria;
-        this.tiempoUso=tiempo_uso;
+        this.tiempoUso=tiempoUso;
         this.proveedor=proveedor;
-        this.descripcionEstado=descripcion_estado;
+        this.descripcionEstado=descripcionEstado;
                 
+    }
     
+    /**
+     * 
+     * @param serial
+     * @param placa 
+     */
+    public Equipo(String serial, String placa){
+        throw new RuntimeException("No se ha implementado el metodo constructor 'Equipo'");
             
     }
+    
+    /**
+     * 
+     * @param serial 
+     */
+    public Equipo(String serial){
+        throw new RuntimeException("No se ha implementado el metodo constructor 'Equipo'");
+    }
+    
+
     public List<prestamo> getEquipoPrestamo(){
         return prestamoEquipo;
     }
+
     
     public String getNombre() {
         return nombre;
