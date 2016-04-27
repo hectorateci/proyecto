@@ -9,7 +9,7 @@ import edu.eci.pdsw.proyecto.logica.entidades.prestamo;
 import java.sql.Date;
 import java.util.LinkedList;
 import java.util.List;
-import javax.annotation.ManagedBean;
+import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 
@@ -17,8 +17,8 @@ import javax.faces.bean.SessionScoped;
  *
  * @author 2098654
  */
-@ManagedBean(name="InventarioBean")
 @SessionScoped
+@ManagedBean(name = "beanInventario")
 
 public class inventario {
     
