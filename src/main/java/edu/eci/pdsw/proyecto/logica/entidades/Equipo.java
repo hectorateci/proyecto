@@ -31,6 +31,15 @@ public class Equipo {
     private String descripcionEstado;
     private List<prestamo> prestamoEquipo = new LinkedList<prestamo>();
     private String serial;
+    private String foto;
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
 
     public String getSerial() {
         return serial;
@@ -40,14 +49,14 @@ public class Equipo {
         this.serial = serial;
     }
 
-    public String getPlaca() {
+    public int getPlaca() {
         return placa;
     }
 
-    public void setPlaca(String placa) {
+    public void setPlaca(int placa) {
         this.placa = placa;
     }
-    private String placa;
+    private int placa;
     
     /**
      * 
@@ -89,7 +98,7 @@ public class Equipo {
      * @param serial
      * @param placa 
      */
-    public Equipo(String serial, String placa){
+    public Equipo(String serial, int placa){
         this.serial = serial;
         this.placa = placa;
     }
