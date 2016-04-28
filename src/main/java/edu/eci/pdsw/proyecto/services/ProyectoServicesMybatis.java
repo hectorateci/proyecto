@@ -9,6 +9,8 @@ import edu.eci.pdsw.proyecto.logica.entidades.Equipo;
 import edu.eci.pdsw.proyecto.persistence.DaoFactory;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Properties;
 import javax.persistence.PersistenceException;
 
@@ -31,9 +33,13 @@ public class ProyectoServicesMybatis extends ProyectoServices{
     
     @Override
     
-    public void registrarEquipo(Equipo eq)throws ExceptionProyectoServices{
-       
-        daoFac .beginSession();        
+    public void registrarEquipo(Equipo eq)throws PersistenceException{
+       try{
+           daoFac.beginSession();  
+       }catch(PersistenceException ex){
+           throw new PersistenceException("No inicio la conexion", ex);
+       }
+              
         daoFac.getDaoEquipo().save(eq);
         daoFac.commitTransaction();
         daoFac.endSession();               
@@ -61,5 +67,11 @@ public class ProyectoServicesMybatis extends ProyectoServices{
         daoFac.endSession();
     }
 
-   
+    public List<Equipo> listaEquipos(){
+        List listaEquipos = null;
+        daoFac.beginSession();
+        listaEquipos = daoFac.getDaoEquipo().loadAll();
+        daoFac.endSession();
+        return listaEquipos;
+    }
 }

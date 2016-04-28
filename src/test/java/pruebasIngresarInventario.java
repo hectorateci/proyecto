@@ -27,7 +27,7 @@ public class pruebasIngresarInventario {
     *
     */
     
-    /*
+    
     @Test
     public void ingresarInventarioModeloExistenteSerialPlaca(){
         ProyectoServices ps = new ProyectoServices();
@@ -41,7 +41,7 @@ public class pruebasIngresarInventario {
         
     }
     
-    */
+    
     
     /**
     *Se ingresa al inventario un equipo que el modelo ya esta existente con solo un numero de serial.
@@ -172,7 +172,7 @@ public class pruebasIngresarInventario {
         }catch(Exception ex){
             Assert.assertTrue("Paso la prueba", true);
         }
-    }
+    }*/
 
-*/
+
 }

@@ -7,6 +7,8 @@ package edu.eci.pdsw.proyecto.services;
 
 import edu.eci.pdsw.proyecto.logica.entidades.Equipo;
 import java.io.IOException;
+import java.util.List;
+import javax.persistence.PersistenceException;
 
 /**
  *
@@ -28,7 +30,7 @@ public abstract class ProyectoServices {
      * @param eq 
      */
     
-    public abstract void registrarEquipo(Equipo eq) throws ExceptionProyectoServices;
+    public abstract void registrarEquipo(Equipo eq) throws PersistenceException;
         
     
     
@@ -46,6 +48,8 @@ public abstract class ProyectoServices {
      * @param modelo
      */
     public abstract void aumentarInventario(String Modelo,int cant);
+    
+    public abstract List<Equipo> listaEquipos();
     
     
 }

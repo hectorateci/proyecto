@@ -24,8 +24,8 @@ public class DaoEquipoMybatis implements DaoEquipo{
         mapper = sqlsession.getMapper(EquipoMapper.class);
     }
     @Override
-    public Equipo loadEspecific(String serial) throws PersistenceException{
-        Equipo e = mapper.loadEquipoBySerial(serial);
+    public Equipo loadEspecific(String placa) throws PersistenceException{
+        Equipo e = mapper.loadEquipoBySerial(placa);
         if(e==null){
             throw new PersistenceException("el equipo no existe");
         }
@@ -35,7 +35,7 @@ public class DaoEquipoMybatis implements DaoEquipo{
     }
 
     @Override
-    public List<Equipo> loadByModel(String modelo, String placa) {
+    public List<Equipo> loadByModel(String modelo) {
         List<Equipo> equipos = mapper.loadEquiposByModel(modelo);
         if(equipos==null){
             throw new PersistenceException("el modelo no existe");
@@ -51,6 +51,17 @@ public class DaoEquipoMybatis implements DaoEquipo{
             throw new PersistenceException("El equipo ya esta registrado");
         }else{
             mapper.saveEquipos(e);
+        }
+    }
+
+    @Override
+    public List<Equipo> loadAll() {
+        List<Equipo> equipos = mapper.loadAll();
+        if(equipos==null){
+            throw new PersistenceException("No se encontro ningun equipo");
+        }
+        else{
+            return equipos;
         }
     }
     

@@ -14,8 +14,9 @@ import java.util.List;
  */
 public interface DaoEquipo {
     
-    public Equipo loadEspecific(String serial);
-    public List<Equipo> loadByModel(String modelo, String placa);
+    public Equipo loadEspecific(String placa);
+    public List<Equipo> loadByModel(String modelo);
+    public List<Equipo> loadAll();
     public void save(Equipo e);
     
 }

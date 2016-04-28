@@ -46,6 +46,12 @@ public interface EquipoMapper {
      * @param e
      */
     public void saveEquipos(@Param("equipo")Equipo e);
+    
+    /**
+     * Cargar todos los equipos existentes
+     * @return lista de todos los equipos
+     */
+    public List<Equipo> loadAll();
 }
     
     

@@ -8,6 +8,8 @@ package edu.eci.pdsw.webapp.controller;
 import edu.eci.pdsw.proyecto.logica.entidades.Equipo;
 import edu.eci.pdsw.proyecto.logica.entidades.Usuario;
 import edu.eci.pdsw.proyecto.logica.entidades.prestamo;
+import edu.eci.pdsw.proyecto.services.ProyectoServices;
+import java.io.IOException;
 import java.io.Serializable;
 import java.sql.Date;
 import java.text.ParseException;
@@ -31,6 +33,11 @@ public class historicoPrestamosBean implements Serializable {
     private List<Equipo> listaDeEquipos = new ArrayList<Equipo>();
     private List<prestamo> listaDePrestamos = new ArrayList<prestamo>();
     private ArrayList<String> ejemplo = new ArrayList<>();
+    ProyectoServices ps;
+    public historicoPrestamosBean() throws IOException{
+        ps= ProyectoServices.getInstance();
+        this.listaDeEquipos = ps.listaEquipos();
+    }
     
     /*
     *Devuelve el equipo seleccionado en la vista
