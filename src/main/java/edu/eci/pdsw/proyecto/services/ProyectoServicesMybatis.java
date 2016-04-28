@@ -10,55 +10,39 @@ import edu.eci.pdsw.proyecto.persistence.DaoFactory;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import javax.persistence.PersistenceException;
 
 /**
  *
  * @author nicolas
  */
 
-public class ProyectoServicesMybatis {
-    
-    private static ProyectoServicesMybatis instance=null;
+public class ProyectoServicesMybatis extends ProyectoServices{
+   DaoFactory daoFac;
     
     private final Properties properties=new Properties();
-    
-    private ProyectoServicesMybatis () throws IOException{
+    public ProyectoServicesMybatis () throws IOException{
         InputStream input = null;
         input = ProyectoServices.class.getClassLoader().getResource("applicationconfig.properties").openStream();       
         Properties properties=new Properties();
         properties.load(input);
+         daoFac =DaoFactory.getInstance(properties);
     }
-   
     
-    public static ProyectoServicesMybatis getInstance(String propertiesNombre ) throws RuntimeException, IOException{
-        
-        return instance;
-    }
-    /**
-     * Registra un equipo en el inventario.
-     * @param eq 
-     */
-    public void registrarEquipo(Equipo eq){
+    @Override
+    
+    public void registrarEquipo(Equipo eq)throws ExceptionProyectoServices{
        
-        DaoFactory daoFac =DaoFactory.getInstance(properties);
-        daoFac.beginSession();
+        daoFac .beginSession();        
         daoFac.getDaoEquipo().save(eq);
         daoFac.commitTransaction();
-        daoFac.endSession();
-        
-                
+        daoFac.endSession();               
     }
-    
-    
-    
-    /**
-     * Consulta si hay un modelo de equipo ya existente.
-     * @param modelo
-     * @return si un modelo esta o no.
-     */
+   
+    @Override
     public boolean consultarModelo(String modelo){
    
-        DaoFactory daoFac=DaoFactory.getInstance(properties);
+        
         daoFac.beginSession();
         daoFac.getDaoEquipo().loadEspecific(modelo);
         daoFac.commitTransaction();
@@ -66,16 +50,16 @@ public class ProyectoServicesMybatis {
         return false;
     }
     
-    /**
-     * Aumenta el inventario de cierto modelo en la cantidad especificada.
-     * @param cant 
-     * @param modelo
-     */
+   
+    
+    @Override
     public void aumentarInventario(String modelo,int cant){
-    DaoFactory daoFac=DaoFactory.getInstance(properties);
-    daoFac.beginSession();
-    daoFac.getDaoEquipo();
-    daoFac.commitTransaction();
-    daoFac.endSession();
+        
+        daoFac.beginSession();
+        daoFac.getDaoEquipo();
+        daoFac.commitTransaction();
+        daoFac.endSession();
     }
+
+   
 }
